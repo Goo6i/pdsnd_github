@@ -5,7 +5,8 @@
 Investigate Bikeshare Database
 
 ### Description
-Describe what your project is about and what it does
+This program will extract data from the bikeshare database and will give information
+that assesses in making informative decisions by shareholders. 
 
 ### Files used
 Include the files used
