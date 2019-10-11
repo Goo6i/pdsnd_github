@@ -50,7 +50,7 @@ def get_filters():
         else:
             break
 
-    print('-'*40)
+    print('-'*50)
     return city_input, month_input, day_input
 
 
@@ -109,7 +109,7 @@ def time_stats(df):
     common_hour =  df['hour'].mode()[0]
     print('Most common start hour is: ', common_hour)
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
@@ -128,7 +128,7 @@ def station_stats(df):
     common_st_end = df.groupby(['Start Station', 'End Station']).size().idxmax()
     print('Most common combination of start station and end station is: ', common_st_end)
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def trip_duration_stats(df):
@@ -145,7 +145,7 @@ def trip_duration_stats(df):
     average_travel_time = df['Trip Duration'].mean()
     print('The average travel time is: ', average_travel_time)
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def user_stats(df):
@@ -191,7 +191,7 @@ def user_stats(df):
         print('Most common birth year', birth_count)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def main():
